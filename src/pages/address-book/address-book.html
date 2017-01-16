@@ -12,7 +12,42 @@
 
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchTerm" 
+    [formControl]="searchControl" 
+    (ionInput)="onSearchInput();" 
+    placeholder="姓名或手机"></ion-searchbar>
+  <div *ngIf="searching" class="spinner-container">
+    <ion-spinner></ion-spinner>
+  </div>
+  <ion-list>
+    <button ion-item>
+      <h2>集团总部</h2>
+      <ion-note item-right>68</ion-note>
+    </button>
+    <button ion-item>
+      <h2>成都合能</h2>
+      <ion-note item-right>228</ion-note>
+    </button>
+    <button ion-item>
+      <h2>西安合能</h2>
+      <ion-note item-right>113</ion-note>
+    </button>
+    <button ion-item>
+      <h2>长沙合能</h2>
+      <ion-note item-right>70</ion-note>
+    </button>
+    <button ion-item>
+      <h2>物业事业部</h2>
+      <ion-note item-right>516</ion-note>
+    </button>
+    <button ion-item>
+      <h2>商用事业部</h2>
+      <ion-note item-right>46</ion-note>
+    </button>
+    <button ion-item>
+      <h2>深圳合能</h2>
+      <ion-note item-right>10</ion-note>
+    </button>
+  </ion-list>
 </ion-content>

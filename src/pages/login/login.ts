@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
+import { StatusBar } from 'ionic-native';
 
 /*
   Generated class for the Login page.
@@ -15,7 +16,7 @@ import { TabsPage } from '../tabs/tabs';
 export class LoginPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    
+    // StatusBar.styleDefault();
   }
 
   doLogin() {

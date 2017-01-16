@@ -4,15 +4,31 @@
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header no-border>
+<ion-content style="background-color: rgb(242,242,241);">
+  <div class="setting-caption">
+    <img src="assets/images/default_avatar.png" class="avatar" />
+    <p>昵称</p>
+  </div>
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="ios-create-outline" item-left></ion-icon>
+      我的流程</button>
+    <button ion-item>
+      <ion-icon name="ios-information-circle-outline" item-left></ion-icon>
+      test</button>
+  </ion-list>
 
-  <ion-navbar color="primary">
-    <ion-title>我的</ion-title>
-  </ion-navbar>
-
-</ion-header>
-
-
-<ion-content padding>
-
+  <ion-list>
+    <button ion-item>
+      <ion-icon name="ios-create-outline" item-left></ion-icon>
+      意见反馈</button>
+    <button ion-item>
+      <ion-icon name="ios-information-circle-outline" item-left></ion-icon>
+      关于</button>
+  </ion-list>
+  <ion-list>
+    <ion-item tappable style="text-align: center;color: rgb(240,64,55);">
+      退出登录
+    </ion-item>
+  </ion-list>
 </ion-content>

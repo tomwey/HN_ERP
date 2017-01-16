@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { FormControl } from '@angular/forms';
 
 /*
   Generated class for the AddressBook page.
@@ -13,10 +14,15 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class AddressBookPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  searchTerm: string = '';
+  searchControl: FormControl;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AddressBookPage');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.searchControl = new FormControl();
+  }
+
+  onSearchInput() {
+    
   }
 
 }
