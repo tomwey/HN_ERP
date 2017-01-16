@@ -8,20 +8,20 @@
 <ion-content>
   <div class="login-header">
     <img src="assets/images/logo.png" />
-    <p color="mainColor">所有梦想都开花</p>
+    <p color="primary">所有梦想都开花</p>
   </div>
   
   <ion-list>
     <ion-item>
-      <ion-label floating color="">账号</ion-label>
+      <ion-label floating color="primary">账号</ion-label>
       <ion-input type="text" [(ngModel)]="login"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label floating color="mainColor">密码</ion-label>
+      <ion-label floating color="primary">密码</ion-label>
       <ion-input type="password" [(ngModel)]="password"></ion-input>
     </ion-item>
   </ion-list>
   <div padding>
-    <button ion-button block color="mainColor" (click)="doLogin();">登录</button>
+    <button ion-button block color="primary" (click)="doLogin();">登录</button>
   </div>
 </ion-content>

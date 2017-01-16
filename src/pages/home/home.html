@@ -3,4 +3,14 @@
     <img src="assets/images/default_avatar.png" />
     <p>所有梦想都开花</p>
   </div>
+  <ion-grid>
+    <ion-row wrap>
+      <ion-col width-33 *ngFor="let section of sections">
+        <div class="section">
+          <img [src]="section.icon">
+          <p>{{section.label}}</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

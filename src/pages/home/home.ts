@@ -10,12 +10,24 @@ import { StatusBar } from 'ionic-native';
 })
 export class HomePage {
 
+  sections: Array<any> = [];
   constructor(public navCtrl: NavController) {
-
-  }
-
-  ionViewWillEnter() {
-    StatusBar.hide();
+    this.sections = [{
+      icon: 'assets/images/logo.png',
+      label: '流程',
+    },{
+      icon: 'assets/images/logo.png',
+      label: '会议',
+    },{
+      icon: 'assets/images/logo.png',
+      label: '公文',
+    },{
+      icon: 'assets/images/logo.png',
+      label: '计划',
+    },{
+      icon: 'assets/images/logo.png',
+      label: 'BI',
+    }];
   }
 
 }
