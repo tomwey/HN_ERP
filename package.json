@@ -1,8 +1,9 @@
 {
-  "name": "Heneng ERP",
+  "name": "erp",
   "author": "tomwey",
   "homepage": "http://www.heneng.cn/",
   "private": true,
+  "version": "1.0.0",
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
@@ -47,5 +48,5 @@
       "locator": "ios"
     }
   ],
-  "description": "Heneng ERP"
+  "description": "HN_ERP"
 }

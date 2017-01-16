@@ -1,3 +1,14 @@
 page-home {
-
+    .home-caption {
+        background-color: rgb(227,111,0);
+        padding: 30px;
+        text-align: center;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        p {
+            color: white;
+        }
+    }
 }

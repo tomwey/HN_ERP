@@ -3,7 +3,7 @@
     xmlns="http://www.w3.org/ns/widgets" 
     xmlns:cdv="http://cordova.apache.org/ns/1.0">
   <name>HN_ERP</name>
-  <description>Heneng ERP</description>
+  <description>HN_ERP</description>
   <author email="tomwey@163.com" href="http://www.heneng.cn">Heneng Group</author>
   <content src="index.html"/>
   <access origin="*"/>
