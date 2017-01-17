@@ -5,8 +5,6 @@ import { OAListPage } from '../oa-list/oa-list';
 import { AddressBookPage } from '../address-book/address-book';
 import { SettingPage } from '../setting/setting';
 
-import { StatusBar } from 'ionic-native';
-
 @Component({
   templateUrl: 'tabs.html'
 })

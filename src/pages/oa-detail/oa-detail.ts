@@ -1,25 +1,25 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { TabsPage } from '../tabs/tabs';
 
 /*
-  Generated class for the Login page.
+  Generated class for the OADetail page.
 
   See http://ionicframework.com/docs/v2/components/#navigation for more info on
   Ionic pages and navigation.
 */
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html'
+  selector: 'page-oa-detail',
+  templateUrl: 'oa-detail.html'
 })
-export class LoginPage {
+export class OADetailPage {
 
+  oa: any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // StatusBar.styleDefault();
+    this.oa = navParams.get('oa');
   }
 
-  doLogin() {
-    this.navCtrl.push(TabsPage);
+  back() {
+    this.navCtrl.pop();
   }
 
 }

@@ -18,5 +18,14 @@
 </ion-header>
 
 <ion-content>
-  
+  <ion-list>
+    <button ion-item *ngFor="let oa of oaData" (click)="gotoOADetail(oa);" text-wrap>
+      <ion-avatar item-left>
+        <img [src]="oa.icon" />
+      </ion-avatar>
+      <h2>【{{oa.name}}】{{oa.intro}}</h2>
+      <p>{{oa.author}}&nbsp;{{oa.time}}</p>
+      <ion-badge item-right color="danger">已归档</ion-badge>
+    </button>
+  </ion-list>
 </ion-content>

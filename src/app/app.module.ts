@@ -6,6 +6,7 @@ import { OAListPage } from '../pages/oa-list/oa-list';
 import { AddressBookPage } from '../pages/address-book/address-book';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { OADetailPage } from '../pages/oa-detail/oa-detail';
 import { TabsPage } from '../pages/tabs/tabs';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     HomePage,
     TabsPage,
     LoginPage,
+    OADetailPage,
   ],
   imports: [
     IonicModule.forRoot(HNERPApp)
@@ -30,6 +32,7 @@ import { TabsPage } from '../pages/tabs/tabs';
     HomePage,
     TabsPage,
     LoginPage,
+    OADetailPage,
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
